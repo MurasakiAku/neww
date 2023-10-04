@@ -9,8 +9,40 @@ namespace ConsoleApp3
 {
     class Program
     {
+        //static void PrintResult()
+        //{
+        //    int a = int.Parse(Console.ReadLine());
+        //    int sum = 0;
+        //    while (a > 0)
+        //    {
+        //        sum += a % 10;
+        //        a /= 10;
+        //    }
+        //    Console.WriteLine(sum);
+
+        //}
+
+        static void PrintResultTwo()
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            if (a >= 0 && b >= 0 && c >= 0)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+
+
+        }
         static void Main(string[] args)
         {
+            // PrintResult();
+            PrintResultTwo();
+
             //for
             //------
             //6.
