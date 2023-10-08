@@ -25,22 +25,19 @@ namespace ConsoleApp3
         static void PrintResultTwo()
         {
             int b = int.Parse(Console.ReadLine());
-            int c = 0;
-            //int a = int.Parse(Console.ReadLine());
+            int c = 0, plus=0, min=0;
             for (int i = 1; i <= b; i++)
             {               
                 int a = int.Parse(Console.ReadLine());
-                
-                c = a; 
+                c = a;
+                if (c >= 0)
+                {
+                    plus++;
+                }
+                else min++;
             }
-            if (c >= 0)
-            {
-                Console.WriteLine("True");
-            }
-            else Console.WriteLine("False");
-            //else Console.WriteLine("True");
-
-
+            if (min > 0) { Console.WriteLine("False"); }
+            else Console.WriteLine("True");
         }
         static void Main(string[] args)
         {
