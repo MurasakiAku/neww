@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,40 +8,64 @@ namespace ConsoleApp3
 {
     class Program
     {
-        //static void PrintResult()
+        static void PrintResultWhile()
+        {
+            int n = int.Parse(Console.ReadLine());
+            int k = 1;
+            while (k * k <= n)
+            {
+                Console.WriteLine(k++);
+            }
+        }
+        //static void PrintResultFor()
         //{
-        //    int a = int.Parse(Console.ReadLine());
-        //    int sum = 0;
-        //    while (a > 0)
+        //    double n = double.Parse(Console.ReadLine());
+        //    for (int i = 1; i <= n; i++)
         //    {
-        //        sum += a % 10;
-        //        a /= 10;
+        //        //n1 = Math.Pow(n, 2);
+        //        //n2 = Math.Pow(n + i, 2);
+        //        //n3 = Math.Pow(2 * n, 2);
+        //        //Console.WriteLine(n1+n2+n3);
+        //        Console.WriteLine(Math.Pow(n, 2) + Math.Pow(n + i, 2) + Math.Pow(2 * n, 2));
         //    }
-        //    Console.WriteLine(sum);
+        //}
+        //static void PrintResultOne()
+        //{
+        //    int c = 0;
+        //    for (int i = 1; i <= 5; i++)
+        //    {
+        //        int a = int.Parse(Console.ReadLine());
+        //        c += a;
+
+        //    }
+        //    Console.WriteLine(c);
 
         //}
 
-        static void PrintResultTwo()
-        {
-            int b = int.Parse(Console.ReadLine());
-            int c = 0, plus=0, min=0;
-            for (int i = 1; i <= b; i++)
-            {               
-                int a = int.Parse(Console.ReadLine());
-                c = a;
-                if (c >= 0)
-                {
-                    plus++;
-                }
-                else min++;
-            }
-            if (min > 0) { Console.WriteLine("False"); }
-            else Console.WriteLine("True");
-        }
+        //static void PrintResultTwo()
+        //{
+        //    int b = int.Parse(Console.ReadLine());
+        //    int c = 0, plus=0, min=0;
+        //    for (int i = 1; i <= b; i++)
+        //    {               
+        //        int a = int.Parse(Console.ReadLine());
+        //        c = a;
+        //        if (c >= 0)
+        //        {
+        //            plus++;
+        //        }
+        //        else min++;
+        //    }
+        //    if (min > 0) { Console.WriteLine("False"); }
+        //    else Console.WriteLine("True");
+        //}
+
         static void Main(string[] args)
         {
-            // PrintResult();
-            PrintResultTwo();
+            PrintResultWhile();
+            //PrintResultFor();
+            //PrintResultOne();
+            //PrintResultTwo();
 
             //for
             //------
@@ -146,7 +169,14 @@ namespace ConsoleApp3
             //{
             //    Console.WriteLine(n < k);
             //}
-
+            //int a = int.Parse(Console.ReadLine());
+            //int sum = 0;
+            //while (a > 0)
+            //{
+            //    sum += a % 10;
+            //    a /= 10;
+            //}
+            //Console.WriteLine(sum);
 
 
 
