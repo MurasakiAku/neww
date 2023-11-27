@@ -34,27 +34,41 @@ namespace ConsoleApp3
         //    }
         //}
 
-        public class PrintResult {
+        //public class PrintResult {
 
-           public static bool WriteLineOne(int b)
-           {
-                int[] a;
+        //   public static bool WriteLineOne(int b)
+        //   {
+        //        int[] a;
 
-                a = new int[b];
-                Console.WriteLine("Введите числа:");
-                for (int i = 0; i < b; i++)
-                {
-                    a[i] = int.Parse(Console.ReadLine());
-                }
-                for (int i = 0; i < b - 1; i++)
-                {
-                    if (a[i] >= a[i + 1])
-                    {
-                        return false;
-                    }
-                }
-                return true;
-           }
+        //        a = new int[b];
+        //        Console.WriteLine("Введите числа:");
+        //        for (int i = 0; i < b; i++)
+        //        {
+        //            a[i] = int.Parse(Console.ReadLine());
+        //        }
+        //        for (int i = 0; i < b - 1; i++)
+        //        {
+        //            if (a[i] >= a[i + 1])
+        //            {
+        //                return false;
+        //            }
+        //        }
+        //        return true;
+        //   }
+        //}
+
+        public static int Printlines(int count=0)
+        {
+            //int count =0;
+            string space = " ";
+            while (true)
+            {
+                string lines = Console.ReadLine();
+                if (lines == space) break;
+                else count++;
+            }
+            return count;
+            
         }
     
 
@@ -69,11 +83,14 @@ namespace ConsoleApp3
             //double d = double.Parse(Console.ReadLine());
             //Console.WriteLine(PrintFor.PrintResultFor(d));
 
-            PrintResult printResult = new PrintResult();
-            Console.WriteLine("Количество вводимых чисел:");
-            int b = int.Parse(Console.ReadLine());
-            //int a = int.Parse(Console.ReadLine());
-            Console.WriteLine(PrintResult.WriteLineOne(b));
+            //PrintResult printResult = new PrintResult();
+            //Console.WriteLine("Количество вводимых чисел:");
+            //int b = int.Parse(Console.ReadLine());
+            ////int a = int.Parse(Console.ReadLine());
+            //Console.WriteLine(PrintResult.WriteLineOne(b));
+
+            
+            Console.WriteLine(Printlines());
             
             Console.ReadKey();
         }
